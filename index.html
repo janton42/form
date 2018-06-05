@@ -4,6 +4,52 @@
 	<title>Practice Form</title>
 </head>
 <body>
+<main>
+	<h1 id="title">How well do you know veterans?</h1>
+	<p id="description">A short survey to see how familiar you are the US military veteran community.</p>
+	
+	<form id="survey-form">
+		<p id="name-label">Name:</p>
+		<input type="text" id="name" required placeholder="Aaliyah Jones">
 
+		<p id="email-label">Email:</p>
+		<input type="email" id="email" required placeholder="yourname@example.com">
+
+		<p id="number-label">How many US military veterans do you know?</p>
+		<input type="number" id="number" value="0" min="0" max="1000000">
+
+		<p>Are you a military veteran?</p>
+		<label for="service"><input type="radio" name="yes-no">Yes</label>
+		<label for="service"><input type="radio" name="yes-no">No</label>
+
+		<p>In which branch did you serve?</p>
+		<select id="dropdown">
+			<option value="">Air Force</option>
+			<option>Army</option>
+			<option>Marine Corps</option>
+			<option>Navy</option>
+			<option>Other</option>
+			<option selected>None</option>
+		</select>
+
+		<p>Veterans are: (check all that apply)</p>
+		<label for="attitude"><input type="checkbox" name="negative" value="drunks">Alcohalics</label>
+		<label for="attitude"><input type="checkbox" name="negative" value="violent">Violent</label>
+		<label for="attitude"><input type="checkbox" name="negative" value="unstable">unstable</label>
+		<label for="attitude"><input type="checkbox" name="positive" value="reliable">Reliable</label>
+		<label for="attitude"><input type="checkbox" name="positive" value="punctual">Punctual</label>
+		<label for="attitude"><input type="checkbox" name="positive" value="organized">Organized</label>
+
+		<p>Is there anything else you would like to add?</p>
+		<textarea></textarea>
+
+<br>
+<br>
+
+		<button id="submit">Submit</button>
+	</form>
+</main>
 </body>
 </html>
+
+

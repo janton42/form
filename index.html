@@ -15,9 +15,9 @@
 		<p id="email-label">Email:</p>
 		<input type="email" id="email" required placeholder="yourname@example.com">
 
-		<p id="number-label">How many US military veterans do you know?</p>
-		<input type="number" id="number" value="0" min="0" max="1000000">
-
+		<p>How many US military veterans do you know?</p>
+		<label id="number-label">
+		<input type="number" id="number" value="0" min="0" max="1000000"></label>
 		<p>Are you a military veteran?</p>
 		<label for="service"><input type="radio" name="yes-no">Yes</label>
 		<label for="service"><input type="radio" name="yes-no">No</label>
@@ -48,6 +48,13 @@
 
 		<button id="submit">Submit</button>
 	</form>
+
+	<!-- 10. For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+
+11. For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.'
+
+13. Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+	 -->
 </main>
 </body>
 </html>

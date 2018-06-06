@@ -1,10 +1,25 @@
 /*color pallette
+ROMAN SILVER
 RGB: 137, 142, 153
 
+LIGHT STEEL BLUE
 RGB: 180, 191, 217
 
+WHITE SMOKE
 RGB:244, 245, 249
 
+LANGUID LAVENDER
 RGB: 202, 207, 220
 
+ASH GREY
+RGB: 175, 180, 192
+
 */
+
+body {
+	background-color: rgb(244, 245, 249);
+}
+
+h1 {
+	color: red;
+}

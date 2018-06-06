@@ -1,3 +1,5 @@
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,27 +11,36 @@
 	<p id="description">A short survey to see how familiar you are the US military veteran community.</p>
 	
 	<form id="survey-form">
-		<p id="name-label">Name:</p>
+		<p>Name:</p>
+		<label id="name-label">
 		<input type="text" id="name" required placeholder="Aaliyah Jones">
+      </label>
 
-		<p id="email-label">Email:</p>
-		<input type="email" id="email" required placeholder="yourname@example.com">
+		<p>Email:</p>
+		<label id="email-label">
+			<input type="email" id="email" required placeholder="yourname@example.com">
+		</label>
 
 		<p>How many US military veterans do you know?</p>
 		<label id="number-label">
-		<input type="number" id="number" value="0" min="0" max="1000000"></label>
-		<p>Are you a military veteran?</p>
-		<label for="service"><input type="radio" name="yes-no">Yes</label>
-		<label for="service"><input type="radio" name="yes-no">No</label>
+		<input type="number" id="number" placeholder="0" min="0" max="1000000"></label>
+		
+		<p>Are you a US military veteran?</p>
+		<label for="service"><input type="radio" name="yes-no" value="yes">Yes</label>
+		<label for="service"><input type="radio" name="yes-no" value="no">No</label>
+
+		<p>Are you a non-US military veteran?</p>
+		<label for="service"><input type="radio" name="yes-noforn" value="yes">Yes</label>
+		<label for="service"><input type="radio" name="yes-noforn" value="no">No</label>
 
 		<p>In which branch did you serve?</p>
-		<select id="dropdown">
-			<option value="">Air Force</option>
-			<option>Army</option>
-			<option>Marine Corps</option>
-			<option>Navy</option>
-			<option>Other</option>
-			<option selected>None</option>
+		<select id="dropdown" placeholder="select an option">
+			<option value="air-force">Air Force</option>
+			<option value="army">Army</option>
+			<option value="marines">Marine Corps</option>
+			<option value="navy">Navy</option>
+			<option value="other">Other</option>
+			<option value="none" selected>None</option>
 		</select>
 
 		<p>Veterans are: (check all that apply)</p>
@@ -41,7 +52,7 @@
 		<label for="attitude"><input type="checkbox" name="positive" value="organized">Organized</label>
 
 		<p>Is there anything else you would like to add?</p>
-		<textarea></textarea>
+		<textarea placeholder="Enter your"></textarea>
 
 <br>
 <br>
@@ -49,12 +60,12 @@
 		<button id="submit">Submit</button>
 	</form>
 
-	<!-- 10. For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+<!--
 
-11. For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.'
 
 13. Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
 	 -->
+
 </main>
 </body>
 </html>

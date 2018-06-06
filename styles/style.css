@@ -17,9 +17,24 @@ RGB: 175, 180, 192
 */
 
 body {
+	background-color: rgb(137, 142, 153);
+}
+
+main {
 	background-color: rgb(244, 245, 249);
+	max-width: 425px;
+	margin: auto;
+}
+
+form {
+	background-color: rgb(255, 255, 255);
 }
 
 h1 {
+	color: rgb(0, 0, 0);
+}
+
+h1: p {
 	color: red;
 }
+

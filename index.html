@@ -15,28 +15,46 @@
 	</header>
 
 	<form id="survey-form">
-		<p>Name:</p>
-		<label id="name-label">
-		<input type="text" id="name" required placeholder="Aaliyah Jones">
-      </label>
+	    <div>
+	    	<div class="questions">
+				<label id="name-label">* Name:</label>
+			</div>
 
-		<p>Email:</p>
-		<label id="email-label">
-			<input type="email" id="email" required placeholder="yourname@example.com">
-		</label>
+			<div class="answers">
+				<input type="text" id="name" required placeholder="Aaliyah Jones">
+      		</div>
+      	</div>
 
-		<p>How many US military veterans do you know?</p>
-		<label id="number-label">
-		<input type="number" id="number" placeholder="0" min="0" max="1000000"></label>
+		<div>
+			<div class="questions">
+				<label id="email-label">* Email:</label>
+			</div>
+			<div class="answers">
+				<input type="email" id="email" required placeholder="yourname@example.com">
+			</div>
+		</div>
+
+		<div>
+			<div class="questions">
+				<label id="number-label">How many US military veterans do you know?</label>
+			</div>
+			<div class="answers">
+				<input type="number" id="number" placeholder="0" min="0" max="1000000">
+			</div>
+		</div>
 		
+		<div>
 		<p>Are you a US military veteran?</p>
-		<label for="service"><input type="radio" name="yes-no" value="yes">Yes</label>
-		<label for="service"><input type="radio" name="yes-no" value="no">No</label>
-
+			<label for="service"><input type="radio" name="yes-no" value="yes">Yes</label>
+			<label for="service"><input type="radio" name="yes-no" value="no">No</label>
+		</div>
+		
+		<div>
 		<p>Are you a non-US military veteran?</p>
 		<label for="service"><input type="radio" name="yes-noforn" value="yes">Yes</label>
 		<label for="service"><input type="radio" name="yes-noforn" value="no">No</label>
-
+		</div>
+		<div>
 		<p>In which branch did you serve?</p>
 		<select id="dropdown" placeholder="select an option">
 			<option value="air-force">Air Force</option>
@@ -46,7 +64,8 @@
 			<option value="other">Other</option>
 			<option value="none" selected>None</option>
 		</select>
-
+		</div>
+		<div>
 		<p>Veterans are: (check all that apply)</p>
 		<label for="attitude"><input type="checkbox" name="negative" value="drunks">Alcohalics</label>
 		<label for="attitude"><input type="checkbox" name="negative" value="violent">Violent</label>
@@ -54,7 +73,7 @@
 		<label for="attitude"><input type="checkbox" name="positive" value="reliable">Reliable</label>
 		<label for="attitude"><input type="checkbox" name="positive" value="punctual">Punctual</label>
 		<label for="attitude"><input type="checkbox" name="positive" value="organized">Organized</label>
-
+	</div>
 		<p>Is there anything else you would like to add?</p>
 		<textarea placeholder="Write something, fucko!"></textarea>
 

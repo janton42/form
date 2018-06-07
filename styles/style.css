@@ -41,7 +41,18 @@ form {
 	background-color: rgb(255, 255, 255);
 }
 
+.questions {
+	display: inline-block;
+	text-align: right;
+	width: 50%;
+	float: left;
+}
 
+.answers {
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+}
 
 
 

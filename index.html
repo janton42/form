@@ -6,6 +6,7 @@
 	<title>Practice Form</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
+<div id="outer-wrapper">
 <body>
 <main>
 	
@@ -14,74 +15,103 @@
 		<p id="description">A short survey to see how familiar you are the US military veteran community.</p>
 	</header>
 
+	<!-- 	Entry template  
+
+		    	<div class="questions">
+					<label id=" -label"></label>
+				</div>	
+
+				<div class="answers">
+					<input type="" id="" required placeholder="">
+	      		</div>
+	      	 -->
+	<div id="form-wrapper">     	
 	<form id="survey-form">
-	    <div>
+		<div  class="content-wrapper">
 	    	<div class="questions">
 				<label id="name-label">* Name:</label>
-			</div>
+			</div>	
 
 			<div class="answers">
-				<input type="text" id="name" required placeholder="Aaliyah Jones">
+				<input type="text" id="name" required placeholder="Your Name">
       		</div>
-      	</div>
 
-		<div>
+    
 			<div class="questions">
 				<label id="email-label">* Email:</label>
 			</div>
+
 			<div class="answers">
 				<input type="email" id="email" required placeholder="yourname@example.com">
 			</div>
-		</div>
-
-		<div>
+	
 			<div class="questions">
-				<label id="number-label">How many US military veterans do you know?</label>
+				<label id="number-label">* How many US military veterans do you know?</label>
 			</div>
 			<div class="answers">
 				<input type="number" id="number" placeholder="0" min="0" max="1000000">
 			</div>
-		</div>
 		
-		<div>
-		<p>Are you a US military veteran?</p>
-			<label for="service"><input type="radio" name="yes-no" value="yes">Yes</label>
-			<label for="service"><input type="radio" name="yes-no" value="no">No</label>
-		</div>
-		
-		<div>
-		<p>Are you a non-US military veteran?</p>
-		<label for="service"><input type="radio" name="yes-noforn" value="yes">Yes</label>
-		<label for="service"><input type="radio" name="yes-noforn" value="no">No</label>
-		</div>
-		<div>
-		<p>In which branch did you serve?</p>
-		<select id="dropdown" placeholder="select an option">
-			<option value="air-force">Air Force</option>
-			<option value="army">Army</option>
-			<option value="marines">Marine Corps</option>
-			<option value="navy">Navy</option>
-			<option value="other">Other</option>
-			<option value="none" selected>None</option>
-		</select>
-		</div>
-		<div>
-		<p>Veterans are: (check all that apply)</p>
-		<label for="attitude"><input type="checkbox" name="negative" value="drunks">Alcohalics</label>
-		<label for="attitude"><input type="checkbox" name="negative" value="violent">Violent</label>
-		<label for="attitude"><input type="checkbox" name="negative" value="unstable">unstable</label>
-		<label for="attitude"><input type="checkbox" name="positive" value="reliable">Reliable</label>
-		<label for="attitude"><input type="checkbox" name="positive" value="punctual">Punctual</label>
-		<label for="attitude"><input type="checkbox" name="positive" value="organized">Organized</label>
-	</div>
-		<p>Is there anything else you would like to add?</p>
-		<textarea placeholder="Write something, fucko!"></textarea>
+			<div class="questions">
+				<label id="us-service-label">* Are you a US military veteran?</label>
+			</div>	
 
-<br>
-<br>
+			<div class="answers">
+				<label><input type="radio" name="yes-no" value="yes" required>Yes</label>
+				<label><input type="radio" name="yes-no" value="no">No</label>
+	      	</div>
+
+	      	<div class="questions">
+				<label id="us-service-label">* Are you a non-US military veteran?</label>
+			</div>	
+
+			<div class="answers">
+				<label><input type="radio" name="yes-noforn" value="yes" required>Yes</label>
+				<label><input type="radio" name="yes-noforn" value="no">No</label>
+	      	</div>
+
+	      	<div class="questions">
+				<label id="us-service-label">* In which branch did you serve?</label>
+			</div>
+
+			<div class="answers">
+				<select id="dropdown" placeholder="select an option">
+					<option value disabled selected>Choose one</option>
+					<option value="air-force">Air Force</option>
+					<option value="army">Army</option>
+					<option value="marines">Marine Corps</option>
+					<option value="navy">Navy</option>
+					<option value="other">Other</option>
+					<option value="none">None</option>
+				</select>
+			</div>	
+
+	      	<div class="questions">
+				<label id="us-service-label">* Veterans are:<br>(check all that apply)</label>
+			</div>
+
+
+			<div class="answers">
+				<ul style="list-style: none;">
+					<li class="checkbox"><label><input type="checkbox" name="attitude" value="1">Alcohalics</label></li>
+					<li class="checkbox"><label><input type="checkbox" name="attitude" value="2">Violent</label></li>
+					<li class="checkbox"><label><input type="checkbox" name="attitude" value="3">unstable</label></li>
+					<li class="checkbox"><label><input type="checkbox" name="attitude" value="4">Reliable</label></li>
+					<li class="checkbox"><label><input type="checkbox" name="attitude" value="5">Punctual</label></li>
+					<li class="checkbox"><label><input type="checkbox" name="attitude" value="6">Organized</label></li>
+				</ul>
+			</div>
+		</div>
+		
+		<p>Is there anything else you would like to add?</p>
+		<textarea id="comments" placeholder="Enter your comments here..."></textarea>
+
+		<br>
+		<br>
 
 		<button id="submit">Submit</button>
 	</form>
+</div> 
 
 <!--
 
@@ -91,6 +121,7 @@
 
 </main>
 </body>
+</div>
 </html>
 
 

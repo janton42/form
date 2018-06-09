@@ -41,18 +41,39 @@ form {
 	background-color: rgb(255, 255, 255);
 }
 
+form p {
+	text-align: center;
+}
+
+.content-wrapper {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+}
+
+
 .questions {
-	display: inline-block;
+	/*display: flex;*/
 	text-align: right;
-	width: 50%;
-	float: left;
+	padding-top: 0.3125em;
+	padding-left: 0.15626em;
 }
 
 .answers {
-	display: inline-block;
+	/*display: flex;*/
 	text-align: left;
-	width: 50%;
+	padding-top: 0.3125em;
+	padding-left: 0.15626em;
 }
+
+#comments {
+	width: 90%;
+}
+
+#form-wrapper {
+	padding: 0.3em;
+}
+
 
 
 

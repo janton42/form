@@ -25,9 +25,11 @@
 					<input type="" id="" required placeholder="">
 	      		</div>
 	      	 -->
+
 	<div id="form-wrapper">     	
 	<form id="survey-form">
-		<div  class="content-wrapper">
+
+		<div id="full-name" class="content-wrapper">
 	    	<div class="questions">
 				<label id="name-label">* Name:</label>
 			</div>	
@@ -35,23 +37,28 @@
 			<div class="answers">
 				<input type="text" id="name" required placeholder="Your Name">
       		</div>
-
+      	</div>
     
-			<div class="questions">
+    	<div id="contact-email" class="content-wrapper">
+			<div id="second" class="questions">
 				<label id="email-label">* Email:</label>
 			</div>
 
 			<div class="answers">
 				<input type="email" id="email" required placeholder="yourname@example.com">
 			</div>
-	
+		</div>
+		
+		<div id="number-of-known-veterans" class="content-wrapper">
 			<div class="questions">
 				<label id="number-label">* How many US military veterans do you know?</label>
 			</div>
 			<div class="answers">
 				<input type="number" id="number" placeholder="0" min="0" max="1000000">
 			</div>
-		
+		</div>
+
+		<div id="veteran-status" class="content-wrapper">
 			<div class="questions">
 				<label id="us-service-label">* Are you a US military veteran?</label>
 			</div>	
@@ -61,20 +68,21 @@
 				<label><input type="radio" name="yes-no" value="no">No</label>
 	      	</div>
 
-	      	<div class="questions">
-				<label id="us-service-label">* Are you a non-US military veteran?</label>
+	      	<div id="non-us-service" class="questions">
+				<label id="non-us-service-label">* Are you a non-US military veteran?</label>
 			</div>	
 
 			<div class="answers">
 				<label><input type="radio" name="yes-noforn" value="yes" required>Yes</label>
 				<label><input type="radio" name="yes-noforn" value="no">No</label>
 	      	</div>
+	      
 
 	      	<div class="questions">
-				<label id="us-service-label">* In which branch did you serve?</label>
+				<label id="branch-of-service-label">* In which branch did you serve?</label>
 			</div>
 
-			<div class="answers">
+			<div id="" class="answers">
 				<select id="dropdown" placeholder="select an option">
 					<option value disabled selected>Choose one</option>
 					<option value="air-force">Air Force</option>
@@ -85,13 +93,14 @@
 					<option value="none">None</option>
 				</select>
 			</div>	
-
-	      	<div class="questions">
-				<label id="us-service-label">* Veterans are:<br>(check all that apply)</label>
+		</div>
+		
+	      	<div id="" class="questions">
+				<label id="impression-label">* Veterans are:<br>(check all that apply)</label>
 			</div>
 
 
-			<div class="answers">
+			<div id="" class="answers">
 				<ul style="list-style: none;">
 					<li class="checkbox"><label><input type="checkbox" name="attitude" value="1">Alcohalics</label></li>
 					<li class="checkbox"><label><input type="checkbox" name="attitude" value="2">Violent</label></li>
@@ -101,15 +110,17 @@
 					<li class="checkbox"><label><input type="checkbox" name="attitude" value="6">Organized</label></li>
 				</ul>
 			</div>
-		</div>
 		
-		<p>Is there anything else you would like to add?</p>
-		<textarea id="comments" placeholder="Enter your comments here..."></textarea>
+		
+		<div id="form-footer">
+			<p>Is there anything else you would like to add?</p>
+			<textarea id="comments" placeholder="Enter your comments here..."></textarea>
 
-		<br>
-		<br>
+			<br>
+			<br>
 
-		<button id="submit">Submit</button>
+			<button id="submit">Submit</button>
+		</div>
 	</form>
 </div> 
 

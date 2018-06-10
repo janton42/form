@@ -43,6 +43,8 @@ form {
 
 ul {
 	padding-left: 0;
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
 
 /*form p {
@@ -76,6 +78,7 @@ ul {
 
 #form-wrapper {
 	padding: 0.3em;
+	/*max-height: 4.86875em;*/
 }
 
 #form-footer {
@@ -84,9 +87,9 @@ ul {
 	flex-direction: column;
 }
 
-#impression-label {
-
-}
+/*#impression-label {
+	text-align: center;
+}*/
 
 
 
